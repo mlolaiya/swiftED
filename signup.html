@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Back Road Tour</title>
+    <title>Sign Up</title>
     <!-- Style css -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form.css" />
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -52,11 +52,16 @@
                 <input
                   type="password"
                   placeholder="Enter Password"
-                  class="form-control"
+                  class="form-control form-special"
                   name="psw"
                   id="eye_icon"
                   required
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*?[0-9])(?=.*?[!@#$%^&*+`~=?\|<>/]).{8,}"
                 />
+                <small
+                  >Password should contain an uppercase letter, number and
+                  symbol</small
+                >
                 <i class="fa-solid fa-eye" id="togglePassword"></i>
               </div>
 
@@ -69,13 +74,13 @@
                   name="psw"
                   id="eye_icon"
                   required
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*?[0-9])(?=.*?[!@#$%^&*+`~=?\|<>/]).{8,}"
                 />
                 <i class="fa-solid fa-eye" id="togglePassword"></i>
               </div>
               <label>
                 <input
                   type="checkbox"
-                  checked="checked"
                   name="remember"
                   style="margin-bottom: 15px"
                 />
@@ -83,8 +88,21 @@
                 <a href="#">Privacy Policy</a>
               </label>
             </div>
-            <!-- button -->
+            <!-- buttons -->
             <button type="submit" class="submit-btn btn">create account</button>
+
+            <!-- The Horizontal Rule -->
+            <div class="button-divider"><span> or </span></div>
+
+            <!-- Alternative Signup -->
+            <button type="submit" class="submit-btn btn btn btn-special">
+              <i class="foot-icons fab fa-google fa-1x"></i> Continue with
+              Google
+            </button>
+            <button type="submit" class="submit-btn btn btn-special">
+              <i class="foot-icons fa-brands fa-linkedin-in"></i>
+              Continue with LinkedIn
+            </button>
           </form>
           <div class="form-footer">
             <p>Already have an account? <a href="login.html">Sign in</a>.</p>
