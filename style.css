@@ -147,8 +147,6 @@ p {
   height: 0;
   overflow: hidden;
   transition: 0.5s ease-in-out all;
-
-  /* justify-content: center; */
 }
 
 .nav {
@@ -194,7 +192,6 @@ li {
 .nav-center {
   width: 80vw;
   margin: 0 auto;
-  /*  background: var(--clr-background); */
   padding: 1rem;
 }
 
@@ -221,7 +218,6 @@ li {
   color: var(--clr-primary-5);
   font-size: 2rem;
   cursor: pointer;
-  /* justify-content:space-between (As in Flexbox) */
   justify-self: end;
 }
 
@@ -243,8 +239,6 @@ li {
     margin: 0 auto;
     align-items: center;
     text-align: center;
-    /* align-content: center; */
-    /* justify-items: center; */
     justify-content: space-between;
     padding: 1.5rem;
   }
@@ -397,7 +391,7 @@ h3 {
 /*============= About Section ============== */
 .about-section {
   background: var(--clr-white);
-  height: 100vh;
+  height: 50vh;
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
@@ -466,47 +460,47 @@ h3 {
     height: 100vh;
     width: 100vw;
   }
-}
 
-.about-center {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-  background: var(--clr-white);
-}
+  .about-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    background: var(--clr-white);
+  }
 
-.about-info {
-  padding: 2rem;
-  width: 50vw;
-}
+  .about-info {
+    padding: 2rem;
+    width: 50vw;
+  }
 
-.about-image {
-  width: 50vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  clip-path: polygon(0 0, 100% 0, 40% 100%, 0 100%);
-  background-color: #e7e7ff;
-  padding: 2rem;
-  position: relative;
-}
+  .about-image {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    clip-path: polygon(0 0, 100% 0, 40% 100%, 0 100%);
+    background-color: #e7e7ff;
+    padding: 2rem;
+    position: relative;
+  }
 
-.about-bg-img {
-  width: 10.45rem;
-  height: 15.11rem;
-  object-fit: cover;
-  border-bottom-left-radius: 5rem;
-  border-top-right-radius: 5rem;
-}
+  .about-bg-img {
+    width: 10.45rem;
+    height: 15.11rem;
+    object-fit: cover;
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+  }
 
-.about-img-2 {
-  opacity: 0;
-}
-.about-img-1,
-.about-img-special-1 {
-  margin-bottom: 5rem;
+  .about-img-2 {
+    opacity: 0;
+  }
+  .about-img-1,
+  .about-img-special-1 {
+    margin-bottom: 5rem;
+  }
 }
 
 @media screen and (min-width: 950px) {
